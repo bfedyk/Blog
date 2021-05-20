@@ -1,0 +1,11 @@
+<!-- Add the header using EJS partials-->
+<%- include("partials/header") -%>
+
+<!-- Take requested blog post title from app.js-->
+<h1><p><%= postTitle %></p></h1>
+
+<!-- Display blog content-->
+<p><%= postContent %></p>
+
+<!-- Add the footer page using EJS partials-->
+<%- include("partials/footer") -%>

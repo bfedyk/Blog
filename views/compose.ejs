@@ -1,0 +1,27 @@
+<!-- Add the header using EJS partials-->
+<%- include("partials/header") -%>
+
+
+<h1>Compose</h1>
+
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="postTitle" autofocus>
+    <label for="post">Post</label>
+    <textarea class="form-control" rows="5" id="post" name="postBody"></textarea>
+  <!-- </div>
+  <div class="form-group">
+   <label for="post">Post</label>
+   <textarea class="form-control" rows="5" id="post"></textarea> -->
+   <!-- Solution from course
+   <textarea name="postBody" rows="5" id="post"></textarea>
+     -->
+   <!-- <input type="text" class="form-control" rows="5" id="post"> -->
+   <!-- <button type="submit" class="btn btn-primary" name="button">Publish</button> -->
+  </div>
+  <button type="submit" class="btn btn-primary" name="button">Publish</button>
+</form>
+
+<!-- Add the fotter page using EJS partials-->
+<%- include("partials/footer") -%>
