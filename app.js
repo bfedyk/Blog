@@ -29,7 +29,7 @@ app.use(express.static("public"));
 // Render the home page displaying the starting content
 app.get("/", function(req, res){
 
-  // res.render home page passing the two variables
+  // res.render home page passing three variables
   res.render("home",{
     startContent: homeStartingContent,
     posts: posts,
